@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>Site</title>
+    </head>
+    <body>
+        <section>
+            <div id="zatemnenie">
+                <div class="okno-visible">
+                    <img class="okno-image" src="images/scrabo.jpg">
+                    <div class="okno-visible--text"><p>Башня Скрабо</p></div> 
+                </div>
+                <div id="okno">
+                    The Scrabo Tower<br>
+                    <a href="#" class="close">Закрыть окно</a>
+                </div>
+            </div>
+
+            <a href="#zatemnenie" class="silka1"><img class="metka-1" src="images/metka.png" alt="scrabo"></a>
+        </section>
+        <section>            <div id="zatemnenie1">
+            <div class="okno-visible">
+                <img class="okno-image" src="images/constanta.jpg">
+                <div class="okno-visible--text"><p>Казино Констанца</p></div> 
+            </div>
+            <div id="okno1">
+                <div class="slider">  
+                </div>
+                <a href="#" class="close">Закрыть окно</a>
+            </div>
+        </div>
+
+            <a href="#zatemnenie1" class="silka2">
+                <img class="metka-2" src="images/metka.png" alt="constanta">
+            </a>
+        </section>
+        <section>
+            <div id="zatemnenie2">
+                <div class="okno-visible">
+                    <img class="okno-image" src="images/dadipark.jpg">
+                    <div class="okno-visible--text"><p>Парк "Дадипарк"</p></div> 
+                </div>
+                <div id="okno2">
+                    <div class="slider">  
+                    </div>
+                    <a href="#" class="close">Закрыть окно</a>
+                </div>
+            </div>
+            <a href="#zatemnenie2" class="silka3">
+                <img class="metka-3" src="images/metka.png" alt="dadipark">
+            </a>
+        </section>
+        <section>
+            <a href="#zatemnenie" class="silka4">
+            </a>
+        </section>
+        <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script>
+            var slideEl = $(".slide--parent");
+
+            slideEl.flickity({
+                imagesLoaded: true,
+                wrapAround: true,
+                autoPlay: true,
+                pauseAutoPlayOnHover: true
+            });
+        </script>
+    </body>
+</html>

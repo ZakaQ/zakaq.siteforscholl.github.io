@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url("images/backgroundimage.jpeg") no-repeat;
+    background-size: cover;
+}
+.silka1 {
+    cursor: pointer;
+}
+.metka-1 {
+    width: 25px;
+    height: 25px;
+    top: 280px;
+    left: 570px;
+    position: relative;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.metka-1:hover,
+.metka-2:hover{
+    transform: scale(1.2);
+    border: 1px solid#870000;
+    border-radius: 27px;
+}
+.metka-2 {
+    width: 25px;
+    height: 25px;
+    top: 287px;
+    left: 708px;
+    position: relative;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.metka-3 {
+    width: 15px;
+    height: 15px;
+    top: 238px;
+    left: 634px;
+    position: relative;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.metka-4 {
+    width: 15px;
+    height: 15px;
+    top: 238px;
+    left: 634px;
+    position: relative;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.metka-4:hover {
+    transform: scale(1.5);
+    border: 1px solid#870000;
+    border-radius: 27px;
+}
+
+.metka-3:hover {
+    transform: scale(1.5);
+    border: 1px solid#870000;
+    border-radius: 27px;
+}
+#zatemnenie {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+#zatemnenie1 {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+#zatemnenie2{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+#okno {
+    width: 800px;
+    height: 550px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 450px;
+    margin: auto;
+    background: url("images/bg-for-text.jpg") no-repeat;
+    background-size: cover;
+}
+#okno1 {
+    width: 800px;
+    height: 550px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 450px;
+    margin: auto;
+    background: url("images/bg-for-text.jpg") no-repeat;
+    background-size: cover;
+}
+#okno2{
+    width: 800px;
+    height: 550px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 450px;
+    margin: auto;
+    background: url("images/bg-for-text.jpg") no-repeat;
+    background-size: cover;
+}
+#zatemnenie:target {display: block;}
+#zatemnenie1:target {display: block;}
+#zatemnenie2:target {display: block;}
+.close {
+    display: inline-block;
+    border: 1px solid #0000cc;
+    color: white;
+    position: relative;
+    top: 513px;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: transparent;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.close:hover {
+    background: transparent;
+    border-radius: 20px;
+}
+.okno-image {
+    width: 455px;
+    height: 550px; 
+    position: relative;
+    top: 54px;
+    left: 50px;   
+}
+.okno-visible--text {
+    position:absolute; 
+    visibility:hidden;
+    top: 250px;
+    left:50px;
+    background:rgba(0, 0, 0, 0.4392156862745098);
+    font-size:20px;
+    color: white;
+    width: 455px;
+    height: 150px;
+    z-index: 1;
+    text-align: center;
+}
+.okno-visible--text p {
+    padding-top: 50px;
+    text-align: center;
+}
+.okno-visible:hover .okno-visible--text {
+    visibility: visible;
+    transition: 1s;
+    -webkit-transition: 1s;;
+}
+.okno-visible img:hover {
+    filter:sepia(50%);
+    -webkit-filter:sepia(60%);
+    transition:0.6s;
+    -webkit-transition:0.6s;
+}
